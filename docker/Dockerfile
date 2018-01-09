@@ -7,7 +7,7 @@ RUN echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/so
     && apt-get install -y --no-install-recommends   \
                ca-certificates wget \
                subversion g++ zlib1g-dev build-essential git python rsync \
-               libncurses5-dev gawk gettext unzip file libssl-dev wget \
+               libncurses5-dev gawk gettext unzip file libssl-dev wget openssh-client vim\
     && apt-get autoclean \
     && apt-get clean \
     && apt-get autoremove\
